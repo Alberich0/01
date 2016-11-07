@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>WebViewExtras demo</title>
+<script type="text/javascript">
+//<![CDATA[
+
+//]]>
+</script>
+</head>
+<body>
+<table style="border-collapse:collapse">
+	<tr>
+		<th>addJavascriptInterface()</th>
+	</tr>
+	<tr>
+		<td>Adds a <a href="http://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface%28java.lang.Object,%20java.lang.String%29">JavascriptInterface</a> to a WebView.</td>
+	</tr>
+	<tr>
+		<td>
+			The JavascriptInterface is a Java object with methods that can be executed using javascript in your WebView.<br />
+			The Java object can execute Subs in your B4A application.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!--	passing true or false to callUIThread seems to make no difference with this test
+			presumably displaying a Toast message does not modify the activity UI?	-->
+			Click <a href="javascript:void(0)" onclick="B4A.CallSub('ShowToast', true, 'Hello from javascript')">HERE</a> to call a Sub in the B4A demo code.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!--	CallSub(final String subName, final boolean callUIThread, final String parameter1)
+			callUIThread is passed boolean true as the acitivity UI will be modified	-->
+			Click <a href="javascript:void(0)" onclick="B4A.CallSub('ToggleWebViewHeight', true)">HERE</a> to call a Sub in the B4A demo code that will change the height of the WebViews in this demo.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Click <a href="javascript:void(0)" onclick="alert(B4A.CallSub('GetString', false))">HERE</a> to call a Sub in the B4A demo code which will return a string to this page.<br />
+			A B4A Sub can only return a (string) value to the javascript if the CallSub() method is passed boolean false as <b>callUIThread</b>.<br />
+			<i>If the B4A Sub modifies the activity UI it cannot return a value to the calling javascript.</i>
+		</td>
+	</tr>
+	<tr>
+		<td><a href="file:///android_asset/web_view_extras_demo.htm">Back to index page</a></td>
+	</tr>
+</table>
+</body>
+</html>

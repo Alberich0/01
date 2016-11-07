@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_25 (Oracle Corporation)
+
+Name: assets/web_view_extras_demo.htm
+SHA1-Digest: wfvn/ynZkEcLCpuZjXfIvwM1R24=
+
+Name: assets/layoutmain.bal
+SHA1-Digest: Frp89LEwHFMFKgwLB+cvMenlabQ=
+
+Name: AndroidManifest.xml
+SHA1-Digest: v4BY2z06jJ64m8LX6rWcoacocQc=
+
+Name: assets/web_chrome_client.htm
+SHA1-Digest: yMjS1wbJ7ZtS8v3vTIc1NmbckGE=
+
+Name: res/drawable/icon.png
+SHA1-Digest: RF9cJXw+SZClhGiHt/nSA+IVwp4=
+
+Name: resources.arsc
+SHA1-Digest: D+6IWJzLA+tuedFz2WFf6I9Cf+Y=
+
+Name: assets/javascript_interface.htm
+SHA1-Digest: htk5Zropn8Sv/TotO3VcoL4U+Gk=
+
+Name: classes.dex
+SHA1-Digest: c/Oi3S0TF6ICdypjhUXboTX79HA=
+

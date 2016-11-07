@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:"http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="" android:installLocation="internalOnly" package="ActionData.Maintenance">
+    <uses-sdk android:minSdkVersion="4" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="Ήφαιστος-ActionData" android:icon="@drawable/icon">
+        <activity android:label="Ήφαιστος-ActionData" android:name=".main" android:launchMode="singleTop" android:screenOrientation="unspecified" android:windowSoftInputMode="2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>WebViewExtras demo</title>
+<script type="text/javascript">
+//<![CDATA[
+function confirmTest(){
+	if(confirm('Take some action?')){
+		alert('Take the action');
+	} else {
+		alert('Don\'t take the action');
+	}
+}
+function promptTest(){
+	var promptText=prompt('Enter some text');
+	alert('You entered "'+promptText+'"');
+}
+function sendConsoleMessages(){
+	//	Methods supported by the console are documented: http://developer.android.com/guide/webapps/debugging.html
+	console.log('This is a console.log() message');
+	console.info('This is a console.info() message');
+	console.warn('This is a console.warn() message');
+	console.error('This is a console.error() message');
+}
+//]]>
+</script>
+</head>
+<body>
+<table style="border-collapse:collapse">
+	<tr>
+		<th>addWebChromeClient()</th>
+	</tr>
+	<tr>
+		<td>Adds a <a href="http://developer.android.com/reference/android/webkit/WebChromeClient.html">WebChromeClient</a> to a WebView.</td>
+	</tr>
+	<tr>
+		<td>
+			Click <a href="javascript:void(0)" onclick="sendConsoleMessages()">HERE</a> and look at your application log.<br />
+			<i>Without a WebChromeClient, no console output from your WebView will be logged.</i>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Alert and other modal box tests here.<br />
+			<a href="javascript:void(0)" onclick="alert('This is a javascript alert modal')">alert()</a><br />
+			<a href="javascript:void(0)" onclick="confirmTest()">confirm()</a><br />
+			<a href="javascript:void(0)" onclick="promptTest()">prompt()</a>
+		</td>
+	</tr>
+	<tr>
+		<td><a href="file:///android_asset/web_view_extras_demo.htm">Back to index page</a></td>
+	</tr>
+</table>
+</body>
+</html>
